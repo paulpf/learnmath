@@ -89,6 +89,25 @@ $$d = \frac{x_1 + x_2}{2}$$
 
 ---
 
+### **Parabel verschieben & verändern – Interaktiv erkunden**
+
+Spiele selbst! Öffne diese interaktive GeoGebra-Applikation und experimentiere mit den Parametern:
+
+## **👉 [→ Öffne: Parabel verstehen (interaktiv)](https://www.geogebra.org/classic/tmr6ujce)**
+
+**Was du verändern kannst:**
+- **$a$ verschieben** → Die Öffnungsrichtung und Breite der Parabel ändert sich
+- **$d$ verschieben** → Der Scheitel wandert nach links/rechts
+- **$c$ verschieben** → Der Scheitel wandert nach oben/unten
+
+**Experimentier-Aufgaben (in GeoGebra):**
+1. Stelle $a = -0{,}5$ ein. Wird die Parabel breiter oder schmaler als bei $a = -2$?
+2. Setze den Scheitel auf $S(3 \mid 2)$. Welche Werte haben dann $d$ und $c$?
+3. Kann man die Parameter so einstellen, dass die Parabel genau durch die Punkte $(0 \mid 0)$, $(1 \mid 1)$ und $(2 \mid 0)$ geht?
+4. Warum ist das Tor aus der Tordurchfahrt-Aufgabe ein Spezialfall mit $d = 0$?
+
+---
+
 ## 2️⃣ Methode – So gehst du vor
 
 ### Das 4-Schritte-Schema (immer gleich!)
