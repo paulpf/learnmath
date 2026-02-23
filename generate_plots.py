@@ -1,6 +1,23 @@
 """
-Parabel-Aufgaben: Automatische Plot-Generierung mit Matplotlib
-Erstellt professionelle PNG-Diagramme für alle Lösungen
+📊 Parabeln-Lernheft: Automatische Plot-Generierung mit Matplotlib
+================================================================
+
+Erzeugt hochwertige, professionelle Visualisierungen für das Lernheft "Parabeln - Klasse 10".
+
+GENERIERTE GRAFIKEN:
+  1. grundlagen_scheitelpunkt_mitte.png      → Erklärt die "Goldene Regel" (Scheitel in der Mitte)
+  2. aufgabe1_tordurchfahrt.png               → Auto durch Torgewölbe
+  3. aufgabe_froschsprung_prüfung2023.png    → Frosch springt über Schilfrohr (Bayern 2023)
+  4. aufgabe2_kugelstossen.png                → Kugelstoßen-Flugbahn
+  5. aufgabe3_springbrunnen.png               → Wasserstrahl im Springbrunnen
+  6. aufgabe4_stahlbruecke.png                → Brücke mit Stützen
+  7. aufgabe5_rakete.png                      → Rakete über Hochhaus
+
+TECHNISCHE DETAILS:
+  - Format:      PNG (300 DPI, hochauflösend)
+  - Library:     Matplotlib mit seaborn-Styling
+  - Ausgabe:     images/ Ordner
+  - Verwendung:  README.md, aufgaben.md, loesungen.md
 """
 
 import matplotlib
@@ -371,6 +388,84 @@ def plot_rakete():
     plt.close()
 
 # ============================================================================
+# Grundlagen: Scheitelpunkt liegt in der Mitte zwischen Nullstellen
+# ============================================================================
+
+def plot_scheitelpunkt_mitte():
+    """
+    Visualisiert das Konzept: Der Scheitelpunkt liegt immer genau in der Mitte
+    zwischen den zwei Nullstellen. Beispiel: Frosch springt von 0 bis 2,20m
+    """
+    # Parameter: Nullstellen bei x=0 und x=2.20, Scheitel bei x=1.10
+    x1, x2 = 0, 2.20
+    d = (x1 + x2) / 2  # = 1.10
+    c = 1.39  # Maximale Höhe im Beispiel (Frosch)
+    a = -c / ((x1 - d)**2)  # Parabel durch (0, 0) und Form f(x) = a(x-d)² + c
+    
+    # Parabel-Plot
+    x = np.linspace(-0.3, 2.5, 200)
+    y = a * (x - d)**2 + c
+    
+    fig, ax = plt.subplots(figsize=(11, 8), dpi=DPI)
+    
+    # Parabel
+    ax.plot(x, y, 'g-', linewidth=4, label='Frosch-Sprungbahn')
+    
+    # Achsen
+    ax.axhline(y=0, color='k', linewidth=1.5)
+    ax.axvline(x=0, color='k', linewidth=1.5)
+    ax.grid(True, alpha=0.3)
+    
+    # Nullstellen markieren
+    ax.plot([x1, x2], [0, 0], 'bo', markersize=12, label=f'Nullstellen: x_1={x1}m, x_2={x2}m', zorder=5)
+    ax.text(x1, -0.15, f'x_1 = 0m', fontsize=11, ha='center', fontweight='bold', color='blue')
+    ax.text(x2, -0.15, f'x_2 = 2,20m', fontsize=11, ha='center', fontweight='bold', color='blue')
+    
+    # Scheitelpunkt markieren
+    ax.plot(d, c, 'r*', markersize=25, label=f'Scheitel S({d}m | {c}m)', zorder=5)
+    ax.text(d, c + 0.15, f'S({d}m | {c}m)', fontsize=11, ha='center', fontweight='bold', 
+           color='red', bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.8))
+    
+    # Vertikale Linien: Abstände zeigen
+    ax.axvline(x=x1, color='red', linewidth=2, linestyle='--', alpha=0.6)
+    ax.axvline(x=d, color='red', linewidth=2.5, linestyle='-', alpha=0.7)
+    ax.axvline(x=x2, color='red', linewidth=2, linestyle='--', alpha=0.6)
+    
+    # Abstände mit Pfeilen zeigen
+    # Abstand x1 bis d
+    ax.annotate('', xy=(x1, -0.35), xytext=(d, -0.35),
+                arrowprops=dict(arrowstyle='<->', color='red', lw=2.5))
+    ax.text((x1 + d) / 2, -0.45, '1,10m', fontsize=11, ha='center', fontweight='bold', color='red')
+    
+    # Abstand d bis x2
+    ax.annotate('', xy=(d, -0.35), xytext=(x2, -0.35),
+                arrowprops=dict(arrowstyle='<->', color='red', lw=2.5))
+    ax.text((d + x2) / 2, -0.45, '1,10m', fontsize=11, ha='center', fontweight='bold', color='red')
+    
+    # Formel anzeigen
+    formula_text = (
+        'Goldene Regel:\n'
+        '$d = \\frac{x_1 + x_2}{2} = \\frac{0 + 2{,}20}{2} = 1{,}10$'
+    )
+    ax.text(1.1, 1.0, formula_text, fontsize=13, ha='center', fontweight='bold',
+           bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.9, pad=0.8),
+           family='monospace')
+    
+    # Labels und Styling
+    ax.set_xlabel('Entfernung (m)', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Höhe (m)', fontsize=12, fontweight='bold')
+    ax.set_title('Grundlagen: Der Scheitelpunkt liegt in der Mitte zwischen den Nullstellen', 
+                fontsize=13, fontweight='bold', color='darkgreen')
+    ax.legend(fontsize=11, loc='upper right')
+    ax.set_xlim(-0.4, 2.6)
+    ax.set_ylim(-0.6, 1.7)
+    
+    plt.tight_layout()
+    plt.savefig('images/scheitelpunkt_mitte.png', dpi=DPI, bbox_inches='tight')
+    print("✓ Grundlagen: Scheitelpunkt in der Mitte")
+    plt.close()
+
+# ============================================================================
 # Alle Plots generieren
 # ============================================================================
 
@@ -379,6 +474,7 @@ if __name__ == "__main__":
     print("PARABELN - Automatische Plot-Generierung")
     print("="*60 + "\n")
 
+    plot_scheitelpunkt_mitte()
     plot_aufgabe1()
     plot_froschsprung()
     plot_kugelstossen_1()

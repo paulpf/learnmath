@@ -93,8 +93,6 @@ Eingeben: `f(x) = -1.5x² + 6` und `g(x) = 2.2`
 - Landung beim: $(2,20 \mid 0)$
 - **Scheitelpunkt:** Bei der **halben Sprungweite** = $x = 1,10$ m und $y = 1,39$ m
 
-![](images/froschsprung.png)
-
 **Also:** $S(1,10 \mid 1,39)$
 
 > **💡 Wichtig:** Bei einer Parabel liegt der Scheitelpunkt IMMER genau in der Mitte zwischen den beiden Nullstellen!
@@ -159,7 +157,7 @@ $$\boxed{f(x) = -\frac{139}{121}(x - 1,10)^2 + 1,39}$$
 
 ### **Schritt 1: Die Situation verstehen**
 
-![](images/froschsprung.png)
+![Froschsprung mit Schilfrohr](images/froschsprung_pruefungsaufgabe.png)
 
 - **Schilfrohr** steht bei: $x = 1,50$ m (150 cm von Absprung)
 - **Schilfrohr-Höhe:** 94 cm = 0,94 m

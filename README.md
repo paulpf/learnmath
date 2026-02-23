@@ -4,19 +4,21 @@
 
 ## 📋 Inhaltsverzeichnis
 
-1. [🗺️ Wie du dieses Lernheft benutzt](#-wie-du-dieses-lernheft-benutzt)
-2. [1️⃣ Grundlagen – Was du wissen musst](#️1️⃣-grundlagen--was-du-wissen-musst)
-3. [2️⃣ Methode – So gehst du vor](#️2️⃣-methode--so-gehst-du-vor)
-4. [3️⃣ Geführtes Beispiel – Tordurchfahrt](#️3️⃣-geführtes-beispiel--tordurchfahrt)
-5. [4️⃣ Prüfungsaufgabe – Der Froschsprung](#️4️⃣-prüfungsaufgabe--der-froschsprung)
-6. [5️⃣ Alle Aufgaben](#️5️⃣-alle-aufgaben)
-7. [6️⃣ Lerntipps – wissenschaftlich belegt](#️6️⃣-lerntipps--wissenschaftlich-belegt)
-8. [7️⃣ Die 5 häufigsten Fehler](#️7️⃣-die-5-häufigsten-fehler)
-9. [8️⃣ Selbsttest – Checkliste](#️8️⃣-selbsttest--checkliste)
-10. [9️⃣ Interaktiv üben mit GeoGebra](#️9️⃣-interaktiv-üben-mit-geogebra)
-11. [📂 Übersicht der Visualisierungen](#-übersicht-der-visualisierungen)
+1. [🗺️ Wie du dieses Lernheft benutzt](#wie-du-dieses-lernheft-benutzt)
+2. [1️⃣ Grundlagen – Was du wissen musst](#1-grundlagen--was-du-wissen-musst)
+3. [2️⃣ Methode – So gehst du vor](#2-methode--so-gehst-du-vor)
+4. [3️⃣ Geführtes Beispiel – Tordurchfahrt](#3-geführtes-beispiel--tordurchfahrt)
+5. [4️⃣ Prüfungsaufgabe – Der Froschsprung](#4-prüfungsaufgabe--der-froschsprung)
+6. [5️⃣ Alle Aufgaben](#5-alle-aufgaben)
+7. [6️⃣ Lerntipps – wissenschaftlich belegt](#6-lerntipps--wissenschaftlich-belegt)
+8. [7️⃣ Die 5 häufigsten Fehler](#7-die-5-häufigsten-fehler)
+9. [8️⃣ Selbsttest – Checkliste](#8-selbsttest--checkliste)
+10. [9️⃣ Interaktiv üben mit GeoGebra](#9-interaktiv-üben-mit-geogebra)
+11. [📊 Automatische Grafik-Generierung](#-automatische-grafik-generierung)
 
 ---
+
+<a id="wie-du-dieses-lernheft-benutzt"></a>
 
 ## 🗺️ Wie du dieses Lernheft benutzt
 
@@ -32,6 +34,8 @@
 
 ---
 
+<a id="1-grundlagen--was-du-wissen-musst"></a>
+
 ## 1️⃣ Grundlagen – Was du wissen musst
 
 ### Was ist eine Parabel?
@@ -40,7 +44,7 @@ Eine **Parabel** ist der Graph einer **quadratischen Funktion**. Sie erscheint �
 
 **Beispiele aus dem Alltag:**
 
-| 🌍 Situation | Gleichung | Frage |
+| 🌍 Situation | Beispielhafte Gleichung einer Parabel| Mögliche Fragestellung |
 |---|---|---|
 | Frosch springt über ein Schilfrohr | $f(x) = -1{,}149(x-1{,}1)^2 + 1{,}39$ | Kommt er drüber? |
 | Auto fährt durch ein Torgewölbe | $f(x) = -1{,}5x^2 + 6$ | Passt es durch? |
@@ -67,11 +71,11 @@ Es gibt drei verschiedene Wege, eine Parabel aufzuschreiben. Jede Form hat Vorte
 
 $$f(x) = a(x-d)^2 + c$$
 
-Der Wert von $a$ bestimmt **alles Wichtige** an der Form der Parabel:
+Das **Vorzeichen** von $a$ bestimmt die **Öffnungsrichtung** der Parabel:
 
 ![Parameter a: Öffnungsrichtung](images/parameter_a_comparison.png)
 
-**Betrag von $a$ bestimmt die Breite:**
+**Betrag** von $a$ bestimmt die Breite:
 - $|a|$ groß (z.B. 3) → Parabel schmal und steil
 - $|a|$ klein (z.B. 0,1) → Parabel breit und flach
 
@@ -79,13 +83,17 @@ Der Wert von $a$ bestimmt **alles Wichtige** an der Form der Parabel:
 
 ### Der Scheitelpunkt – das Herzstück
 
-Der **Scheitelpunkt** $S(d \mid c)$ ist der höchste oder tiefste Punkt der Parabel.
+Der **Scheitelpunkt** $S(d \mid c)$ ist der höchste oder tiefste Punkt der Parabel. Dabei sind $d$ die $x$-Koordinate und $c$ die $y$-Koordinate des Scheitelpunkts.
 
 **Goldene Regel:** Bei einer Parabel mit zwei Nullstellen liegt der Scheitelpunkt immer **genau in der Mitte** zwischen ihnen:
 
 $$d = \frac{x_1 + x_2}{2}$$
 
-**Beispiel:** Frosch springt von $x = 0$ bis $x = 2{,}20$ m → Scheitelpunkt bei $x = \frac{0 + 2{,}20}{2} = 1{,}10$ m ✓
+Dabei sind $x_1$ und $x_2$ die $x$-Koordinaten der Nullstellen.<br><br>
+
+**Beispiel:** Frosch springt von $x_1 = 0$ bis $x_2 = 2{,}20$ m → X-Koordinate des Scheitelpunkts bei $x = \frac{x_1 + x_2}{2} = 1{,}10$ m ✓
+
+![Scheitelpunkt in der Mitte zwischen Nullstellen](images/scheitelpunkt_mitte.png)
 
 ---
 
@@ -108,6 +116,8 @@ Spiele selbst! Öffne diese interaktive GeoGebra-Applikation und experimentiere 
 
 ---
 
+<a id="2-methode--so-gehst-du-vor"></a>
+
 ## 2️⃣ Methode – So gehst du vor
 
 ### Das 4-Schritte-Schema (immer gleich!)
@@ -121,9 +131,11 @@ Spiele selbst! Öffne diese interaktive GeoGebra-Applikation und experimentiere 
 
 ---
 
+<a id="3-geführtes-beispiel--tordurchfahrt"></a>
+
 ## 3️⃣ Geführtes Beispiel – Tordurchfahrt
 
-*Lies jeden Schritt, dann versuche den nächsten selbst, bevor du weiterliest.*
+*Lies zuerst die Schritte, dann versuche selbst, die Aufgabe zu lösen.*
 
 ### Aufgabe
 
@@ -133,51 +145,26 @@ Spiele selbst! Öffne diese interaktive GeoGebra-Applikation und experimentiere 
 
 ---
 
-### Lösung a) – Schritt 1: Koordinatensystem einrichten
+### Lösung (Kurzform – Schritte)
 
-Wir legen den Nullpunkt **in die Mitte** des Tores am Boden. Dann gilt:
+**Schritt 1:** Koordinatensystem einrichten (Ursprung in Tormitte am Boden)
+- Scheitelpunkt: $S(0 \mid 6)$
+- Nullstellen: $(-2 \mid 0)$ und $(2 \mid 0)$
 
-![Koordinatensystem: Tordurchfahrt](images/koordinatensystem_tor.png)
+**Schritt 2:** Scheitelpunktform verwenden → $f(x) = a(x-0)^2 + 6$
 
-Abgelesene Punkte:
-- **Scheitelpunkt:** $S(0 \mid 6)$ → d = 0, c = 6
-- **Nullstellen:** $N_1(-2 \mid 0)$ und $N_2(2 \mid 0)$ (halbierte Breite = 4 m / 2 = 2 m)
+**Schritt 3:** Punkt $(2 \mid 0)$ einsetzen:
+$$0 = 4a + 6 \quad \Rightarrow \quad a = -1{,}5 \quad \Rightarrow \quad f(x) = -1{,}5x^2 + 6$$
 
----
+**Schritt 4:** Fahrzeug passt? Bei $x = 1{,}5$: $f(1{,}5) = 2{,}625$ m > 2,20 m ✅ **JA!**
 
-### Lösung a) – Schritt 2 & 3: Gleichung aufstellen, $a$ berechnen
+📖 **[→ Detaillierte Lösung in aufgaben.md](aufgaben.md#aufgabe-1-tordurchfahrt-)** und **[→ Lösungen.md](loesungen.md#aufgabe-1-tordurchfahrt-)**
 
-$$f(x) = a(x - 0)^2 + 6 = ax^2 + 6$$
-
-Punkt $N_2(2 \mid 0)$ einsetzen:
-
-$$0 = a \cdot 2^2 + 6 \quad \Rightarrow \quad 0 = 4a + 6 \quad \Rightarrow \quad a = -1{,}5$$
-
-$$\boxed{f(x) = -1{,}5x^2 + 6}$$
-
-**Probe:** $f(-2) = -1{,}5 \cdot 4 + 6 = 0$ ✓
+![Tordurchfahrt - Fahrzeug passt durch](images/aufgabe1_tordurchfahrt.png)
 
 ---
 
-### Lösung b) – Schritt 4: Frage beantworten
-
-Das Fahrzeug ist 3 m breit → reicht von $x = -1{,}5$ bis $x = +1{,}5$ (mittig geparkt).
-
-Torthöhe an der schmalsten Stelle, bei $x = 1{,}5$:
-
-$$f(1{,}5) = -1{,}5 \cdot (1{,}5)^2 + 6 = -1{,}5 \cdot 2{,}25 + 6 = -3{,}375 + 6 = 2{,}625 \text{ m}$$
-
-| | Maß |
-|---|---|
-| Tor-Innenhöhe bei $x = 1{,}5$ | **2,625 m** |
-| Fahrzeughöhe | 2,200 m |
-| Freier Platz | **0,425 m = 42,5 cm** ✅ |
-
-**Antwort:** Ja, das Fahrzeug passt mit **42,5 cm Luft** durch.
-
-![Tordurchfahrt](images/aufgabe1_tordurchfahrt.png)
-
----
+<a id="4-prüfungsaufgabe--der-froschsprung"></a>
 
 ## 4️⃣ Prüfungsaufgabe – Der Froschsprung
 
@@ -251,6 +238,8 @@ $$0 = -\frac{3}{200}x^2 + 165 \quad \Rightarrow \quad x^2 = 165 \cdot \frac{200}
 
 ---
 
+<a id="5-alle-aufgaben"></a>
+
 ## 5️⃣ Alle Aufgaben
 
 Das Repository enthält **11 Anwendungsaufgaben** mit vollständigen Lösungen:
@@ -275,6 +264,8 @@ Das Repository enthält **11 Anwendungsaufgaben** mit vollständigen Lösungen:
 📖 **[-> Alle Lösungen öffnen](loesungen.md)** *(erst öffnen, wenn du selbst probiert hast!)*
 
 ---
+
+<a id="6-lerntipps--wissenschaftlich-belegt"></a>
 
 ## 6️⃣ Lerntipps – wissenschaftlich belegt
 
@@ -302,6 +293,8 @@ Das klingt banal, aber eine Skizze verhindert die häufigsten Fehler:
 Setze einen bekannten Punkt in deine Gleichung ein. Stimmt das Ergebnis **nicht genau**, hast du irgendwo einen Fehler.
 
 ---
+
+<a id="7-die-5-häufigsten-fehler"></a>
 
 ## 7️⃣ Die 5 häufigsten Fehler
 
@@ -335,6 +328,8 @@ Die **Sprungweite** ist dann $x_2 - x_1 = 2x$, nicht $x$.
 
 ---
 
+<a id="8-selbsttest--checkliste"></a>
+
 ## 8️⃣ Selbsttest – Checkliste
 
 Beantworte jede Frage ohne nachzuschauen. Wenn du zögerst → nochmal üben!
@@ -356,6 +351,8 @@ Beantworte jede Frage ohne nachzuschauen. Wenn du zögerst → nochmal üben!
 - [ ] Ich verstehe, wie ich Sprungweite aus einer Gleichung berechne
 
 ---
+
+<a id="9-interaktiv-üben-mit-geogebra"></a>
 
 ## 9️⃣ Interaktiv üben mit GeoGebra
 
@@ -379,18 +376,9 @@ Springbrunnen:    f(x) = -3(x - 1)^2 + 3
 
 ---
 
-## 📂 Übersicht der Visualisierungen
+## 📊 Automatische Grafik-Generierung
 
-Alle Diagramme werden automatisch durch das Python-Skript [`generate_plots.py`](generate_plots.py) erzeugt:
-
-| Aufgabe | Diagramm |
-|---|---|
-| Tordurchfahrt | ![](images/aufgabe1_tordurchfahrt.png) |
-| Froschsprung | ![](images/froschsprung.png) |
-| Kugelstoßen | ![](images/aufgabe2_kugelstossen.png) |
-| Springbrunnen | ![](images/aufgabe3_springbrunnen.png) |
-| Stahlbrücke | ![](images/aufgabe4_stahlbruecke.png) |
-| Rakete | ![](images/aufgabe5_rakete.png) |
+> **Hinweis:** Alle Diagramme werden automatisch durch das Python-Skript [`generate_plots.py`](generate_plots.py) bei jedem Lauf aktualisiert. Die Grafiken sind hochauflösend (300 DPI) und direkt in den Aufgaben und Lösungen eingebunden.
 
 ---
 
